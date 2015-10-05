@@ -635,11 +635,15 @@ a.login:hover {
     width: 490px;
 }
 
-.vote h4 {
+.vote > h4 {
     color: #5dabda;
     border-bottom: 1px solid #5dabda;
     text-align: left;
     margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.vote .btn {
     margin-bottom: 10px;
 }
 
