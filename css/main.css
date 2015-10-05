@@ -108,6 +108,30 @@ body > section,
     color: #5b646e;
 }
 
+.devider {
+    margin-top: 30px;
+}
+
+.devider i {
+    color: #cccccc;
+}
+
+.devider:before,
+.devider:after {
+    content: "______________________";
+    color: #e6e8ea;
+    position: relative;
+    bottom: 6px;
+}
+
+.devider:before {
+    right: 10px;
+}
+
+.devider:after {
+    left: 10px;
+}
+
 .mb50 {
     margin-bottom: 50px;
 }
@@ -137,6 +161,14 @@ a.btn-orange,
     margin-right: 0;
     padding-right: 0;
     padding-left: 0;
+}
+
+.progress-bar {
+    box-shadow: none;
+}
+
+.progress-bar-grey {
+    background-color: #DDD;
 }
 
 
@@ -208,6 +240,11 @@ a.login:hover {
         content: "\f023";
         padding: 0 6px 0 30px;
         margin: 0;
+    }
+    #body-logged .login:before {
+        font: normal 14px/1 "FontAwesome";
+        content: "\f007";
+        padding-left: 6px;
     }
 }
 

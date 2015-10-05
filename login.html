@@ -125,11 +125,55 @@
                 </div>
 
                 <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-                    <p>Participate in challenges and vote for the best ideas</p>
+                    <p>Choose your login method</p>
                 </div>
 
+                <div class="row wow fadeInUp animated" style="width:60%; margin: 0 auto;" data-wow-duration="300ms">
+                    <div class="col-sm-6 text-right">
+                        <a href="singpass.html"><img src="img/btn-singpass.png" width="220" /></a>
+                    </div>
+                    <div class="col-sm-6"><img src="img/btn-facebook.png" width="220" /></div>
+                </div>
 
-                <a href="submit.html" class="btn btn-orange" role="button">go to submit idea</a>
+                <div class="row wow fadeInUp animated" style="width:60%; margin: 0 auto;" data-wow-duration="800ms">
+                    <div class="devider text-center" style="margin: 30px; padding: 20px;">Create an account</div>
+
+                    <div class="contact-form">
+                        <form class="form-horizontal" style="width:60%; margin: 0 auto;" action="submit-summary.html">
+
+                            <div class="form-group">
+                                <label for="title" class="col-sm-3 control-label ">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword3 " class="col-sm-3 control-label ">Password</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <div class="checkbox ">
+                                        <label>
+                                            <input type="checkbox"> I agree to the <a href="# ">Terms and Conditions</a>.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <button type="submit " class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
 
             </div>
     </section>
@@ -239,62 +283,6 @@
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            /* ========================================================================= */
-            /*	Contact Form
-            /* ========================================================================= */
-
-            $('#contact-form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: {
-                        required: "come on, you have a name don't you?",
-                        minlength: "your name must consist of at least 2 characters"
-                    },
-                    email: {
-                        required: "no email, no message"
-                    },
-                    message: {
-                        required: "um...yea, you have to write something to send this form.",
-                        minlength: "thats all? really?"
-                    }
-                },
-                submitHandler: function (form) {
-                    $(form).ajaxSubmit({
-                        type: "POST",
-                        data: $(form).serialize(),
-                        url: "process.php",
-                        success: function () {
-                            $('#contact-form :input').attr('disabled', 'disabled');
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $(this).find(':input').attr('disabled', 'disabled');
-                                $(this).find('label').css('cursor', 'default');
-                                $('#success').fadeIn();
-                            });
-                        },
-                        error: function () {
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $('#error').fadeIn();
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

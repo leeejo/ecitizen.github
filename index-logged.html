@@ -54,7 +54,7 @@
 
 </head>
 
-<body id="body">
+<body id="body-logged">
 
     <!-- preloader -->
     <div id="preloader">
@@ -77,7 +77,7 @@
                 <!-- /responsive nav button -->
 
                 <!-- logo -->
-                <a class="navbar-brand" href="#body">
+                <a class="navbar-brand" href="index.html">
                     <h1 id="logo">
 							<img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-red2.png" alt="eCitizen Ideas!" height="40">
 						</h1>
@@ -95,14 +95,14 @@
     <nav class="collapse navbar-collapse" role="navigation">
         <div class="container">
             <ul id="nav" class="nav navbar-nav pull-left">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="current" href="#body">Challenges</a></li>
+                <li><a class="current" href="#body">Home</a></li>
+                <li><a href="challenge.html">Challenges</a></li>
                 <li><a href="#works">Leaderboard</a></li>
                 <li><a href="#team">Funding</a></li>
             </ul>
 
             <div class="search pull-right">
-                <a href="#" class="login" data-toggle="modal" data-target="#login">Login </a>
+                <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
             </div>
@@ -115,41 +115,61 @@
         ==================================== -->
 
 
+    <!--
+        Home Slider
+        ==================================== -->
+
+    <section id="slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators bullet -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+            <!-- End Indicators bullet -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- single slide -->
+                <div class="item active" style="background-image: url(https://www.itsc.org.sg/userfiles/images/code-xapps/logos/Hackathon@SG_LOGO.PNG);">
+                </div>
+                <!-- end single slide -->
+
+                <!-- single slide -->
+                <div class="item" style="background-image: url(https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/DITC_webbanner920x380_11Apr.gif);">
+
+                </div>
+                <!-- end single slide -->
+
+            </div>
+            <!-- End Wrapper for slides -->
+
+        </div>
+    </section>
+
+    <!--
+        End Home SliderEnd
+        ==================================== -->
+
+
+    <!--
+        Challenges
+        ==================================== -->
+
     <section id="challenges" class="challenges">
         <div class="container">
             <div class="row">
 
-                <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-                    <h2>Challenges</h2>
+                <div class="sec-title wow fadeInUp animated clearfix" data-wow-duration="700ms">
+                    <h2 class="pull-left">Choose Challenges</h2>
+                    <a href="challenge.html" class="pull-right btn btn-orange" role="button">View all challenges</a>
                 </div>
 
-                <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-                    <p>Participate in challenges and vote for the best ideas</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="pull-left challenge-filter wow fadeInRight animated" data-wow-duration="500ms">
-                    <ul class="text-center">
-                        <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-                        <li><a href="javascript:;" data-filter=".ongoing" class="filter">Ongoing</a></li>
-                        <li><a href="javascript:;" data-filter=".closed" class="filter">Closed</a></li>
-                    </ul>
-                </div>
-
-                <form action="" class="pull-right search-form">
-                    <div class="form-group has-feedback">
-                        <label for="search" class="sr-only">Search</label>
-                        <input class="form-control" name="search" id="search" placeholder="search challenges" type="text">
-                        <span class="fa fa-search form-control-feedback"></span>
-                    </div>
-                </form>
-
-            </div>
-
-            <div class="project-wrapper">
                 <!-- single challenge -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix ongoing">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
                     <a href="idea-ongoing.html">
                         <div class="challenge-thumb">
                             <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/HDBVideo_thumb.jpg" alt="" class="img-responsive">
@@ -159,7 +179,9 @@
                     <p class="organiser">Organised by HDB</p>
                     <p class="description">Inspire others towards making your neighbourhoods a better place to live in! Organised by the Housing &amp; Development Board (HDB).</p>
 
+
                     <div class="stats clearfix">
+
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
@@ -168,23 +190,26 @@
                             <span class="sr-only">80% Complete (danger)</span>
                         </div>
                     </div>
+
                 </figure>
                 <!-- end single member -->
 
                 <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix ongoing ">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <a href="#">
-                        <div class="challenge-thumb ">
-                            <img src="http://ideascale.com/userimages/accounts/91/915788/NEA-SES-ECitizen-thumbnail_180x180.jpg " alt=" " class="img-responsive ">
+                        <div class="challenge-thumb">
+                            <img src="http://ideascale.com/userimages/accounts/91/915788/NEA-SES-ECitizen-thumbnail_180x180.jpg" alt="" class="img-responsive">
                         </div>
                         <h4>Singapore Environment Story</h4></a>
                     <p class="organiser">Organised by NEA</p>
                     <p class="description">What are your dreams and aspirations of the future environment of Singapore? If you have a story to share, or if you know someone who has played a part in it.</p>
 
+
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
+
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                             <span class="sr-only">80% Complete (danger)</span>
@@ -194,19 +219,21 @@
                 <!-- end single member -->
 
                 <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix ongoing">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     <a href="#">
-                        <div class="challenge-thumb ">
-                            <img src="http://ideascale.com/userimages/accounts/91/915788/SGC2015-eMaterial_Thumbnail_180x180.jpg " alt=" " class="img-responsive ">
+                        <div class="challenge-thumb">
+                            <img src="http://ideascale.com/userimages/accounts/91/915788/SGC2015-eMaterial_Thumbnail_180x180.jpg" alt="" class="img-responsive">
                         </div>
                         <h4>SG GeoSpatial Challenge 2015</h4></a>
-                    <p class="organiser ">Organised by SLA</p>
-                    <p class="description ">SGC2015 aims to encourage the use of Geospatial Information Science and Technology (GIST) in schools by introducing sensors technology.</p>
+                    <p class="organiser">Organised by SLA</p>
+                    <p class="description">SGC2015 aims to encourage the use of Geospatial Information Science and Technology (GIST) in schools by introducing sensors technology.</p>
+
 
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
+
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                             <span class="sr-only">80% Complete (danger)</span>
@@ -216,123 +243,166 @@
                 <!-- end single member -->
 
                 <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
                     <a href="#">
-                        <div class="challenge-thumb ">
-                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/CoolLogo2b.jpg " alt=" " class="img-responsive ">
+                        <div class="challenge-thumb">
+                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/CoolLogo2b.jpg" alt="" class="img-responsive">
                         </div>
                         <h4>Cool Ideas for Better HDB Living
-                        </h4></a>
-                    <p class="organiser ">Organised by HDB</p>
-                    <p class="description ">Most would agree that a home is more than just a space. It is also a place where you can showcase your preferred tastes and infuse your personality.</p>
+                       </h4></a>
+                    <p class="organiser">Organised by HDB</p>
+                    <p class="description">Most would agree that a home is more than just a space. It is also a place where you can showcase your preferred tastes and infuse your personality.</p>
 
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
+
                     <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
                         </div>
                     </div>
                 </figure>
                 <!-- end single member -->
 
-                <!-- single challenge -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
-                    <a href="idea-closed.html">
-                        <div class="challenge-thumb">
-                            <img src="http://www.ecitizen.gov.sg/Highlights/PublishingImages/BeTheSpark_tb_140x140px.gif" alt="" class="img-responsive">
-
-                        </div>
-                        <h4>Be The Spark!</h4></a>
-                    <p class="organiser">Organised by MOF and IDA</p>
-                    <p class="description">We are looking for ideas to create more user-centric digital services that can allow users to easily transact with the Government anytime, anywhere. </p>
-
-                    <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
-                        <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
-                    </div>
-                </figure>
-                <!-- end single member -->
-
-                <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
-                    <a href="#">
-                        <div class="challenge-thumb ">
-                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/FriendsOfUbin_logo-small.png" alt=" " class="img-responsive ">
-                        </div>
-                        <h4>The Ubin Project</h4></a>
-                    <p class="organiser">Organised by MND</p>
-                    <p class="description">Calling all friends and fans of Pulau Ubin to share with us your ideas and proposals to enhance the island's natural environment! </p>
-
-                    <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
-                        <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
-                    </div>
-                </figure>
-                <!-- end single member -->
-
-                <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
-                    <a href="#">
-                        <div class="challenge-thumb ">
-                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/Final-ReadFest-Logo-3.jpg" alt=" " class="img-responsive ">
-                        </div>
-                        <h4>NLB: Be a Poetry on Platforms Star Poet Contest</h4></a>
-                    <p class="organiser ">Organised by NLB</p>
-                    <p class="description ">Try your hand at poetry! Pen an original poem and submit to POP@nlb.gov.sg to receive a commemorative EZ-Link card. </p>
-
-                    <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
-                        <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
-                    </div>
-                </figure>
-                <!-- end single member -->
-
-                <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
-                    <a href="#">
-                        <div class=" challenge-thumb ">
-                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/eCitizen-SURE.jpg" alt=" " class="img-responsive ">
-                        </div>
-                        <h4>S.U.R.E. or Not? Quiz</h4></a>
-                    <p class="organiser ">Organised by S.U.R.E Campaign</p>
-                    <p class="description ">With so much information out there, it’s hard to be sure of what’s true and what’s not. Simply answer 10 questions to complete the quiz. </p>
-
-                    <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
-                        <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
-                    </div>
-                </figure>
-                <!-- end single member -->
             </div>
-
-        </div>
         </div>
     </section>
 
+    <!--
+        Challenges
+        ==================================== -->
 
+
+    <!--
+        Features
+        ==================================== -->
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 sec-title mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                    <h2 class="text-uppercase">News &amp; Announcements</h2>
+                </div>
+
+                <!-- service item -->
+                <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-github fa-2x"></i>
+                        </div>
+
+                        <div class="service-desc">
+                            <h3>Congratulations to our Manpower Hackathon winners</h3>
+                            <p>The winning ideas of this year's Manpower Hackathon include a NFC-enabled smart card that provides monthly incentives to workers and a web-based service that allows foreign workers to learn English in their own preferred languages.</p>
+
+                            <a class="btn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+                <!-- service item -->
+                <div class="col-md-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-pencil fa-2x"></i>
+                        </div>
+
+                        <div class="service-desc">
+                            <h3>Share your stories on Singapore’s environmental progress</h3>
+                            <p>If you have a story to share, or if you know someone who has played a part in Singapore’s environmental progress in the past 50 years, we want to hear from you. Submitted stories will be showcased as part of the celebrations for SG50. </p>
+
+                            <a class="btn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+                <!-- service item -->
+                <div class="col-md-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                        </div>
+
+                        <div class="service-desc">
+                            <h3>Calling for Ideas on Successful Ageing in Singapore </h3>
+                            <p>The Ministry of Health (MOH) launched two challenges calling for suggestions on how to age successfully, following nearly 50 focus group discussions with over 1,300 people on their aspirations for successful ageing in Singapore.</p>
+
+                            <a class="btn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Features
+        ==================================== -->
+
+
+    <!--
+        Some fun facts
+        ==================================== -->
+
+    <section id="facts" class="facts">
+        <div class="parallax-overlay">
+            <div class="container">
+                <div class="row number-counters">
+
+                    <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+                        <h2>Some Fun Facts</h2>
+                    </div>
+
+                    <!-- first count item -->
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                        <div class="counters-item">
+                            <i class="fa fa-clock-o fa-3x"></i>
+                            <strong data-to="3200">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Ideas Submitted</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="counters-item">
+                            <i class="fa fa-users fa-3x"></i>
+                            <strong data-to="360">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Contributors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <div class="counters-item">
+                            <i class="fa fa-rocket fa-3x"></i>
+                            <strong data-to="120">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Completed Challenges</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                        <div class="counters-item">
+                            <i class="fa fa-trophy fa-3x"></i>
+                            <strong data-to="454">0</strong>
+                            <!-- Set Your Number here. i,e. data-to="56" -->
+                            <p>Awards Won</p>
+                        </div>
+                    </div>
+                    <!-- end first count item -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Some fun facts
+        ==================================== -->
 
 
     <footer id="footer" class="footer">
@@ -393,6 +463,7 @@
             </div>
         </div>
     </footer>
+
 
     <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 

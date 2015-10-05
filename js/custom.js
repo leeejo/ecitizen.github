@@ -128,10 +128,10 @@ $(document).ready(function () {
 
 // ==========  START GOOGLE MAP ========== //
 function initialize() {
-    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+    var myLatLng = new google.maps.LatLng(1.299984, 103.789306);
 
     var mapOptions = {
-        zoom: 14,
+        zoom: 18,
         center: myLatLng,
         disableDefaultUI: true,
         scrollwheel: false,

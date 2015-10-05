@@ -97,8 +97,8 @@
             <ul id="nav" class="nav navbar-nav pull-left">
                 <li><a class="current" href="#body">Home</a></li>
                 <li><a href="challenge.html">Challenges</a></li>
-                <li><a href="#works">Leaderboard</a></li>
-                <li><a href="#team">Funding</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="funding.html">Funding</a></li>
             </ul>
 
             <div class="search pull-right">
@@ -209,6 +209,12 @@
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
                 </figure>
                 <!-- end single member -->
 
@@ -227,6 +233,12 @@
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
                 </figure>
                 <!-- end single member -->
 
@@ -245,6 +257,12 @@
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
                         <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
                 </figure>
                 <!-- end single member -->
 
@@ -413,10 +431,10 @@
                     <div class="footer-single">
                         <h6>Explore</h6>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Funding</a></li>
-                            <li><a href="#">Challenges</a></li>
-                            <li><a href="#">Leaderboard</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="funding.html">Funding</a></li>
+                            <li><a href="challenge.html">Challenges</a></li>
+                            <li><a href="leaderboard.html">Leaderboard</a></li>
                         </ul>
                     </div>
                 </div>
@@ -425,7 +443,7 @@
                     <div class="footer-single">
                         <h6>Support</h6>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Rate Us</a></li>
@@ -489,62 +507,6 @@
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            /* ========================================================================= */
-            /*	Contact Form
-            /* ========================================================================= */
-
-            $('#contact-form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: {
-                        required: "come on, you have a name don't you?",
-                        minlength: "your name must consist of at least 2 characters"
-                    },
-                    email: {
-                        required: "no email, no message"
-                    },
-                    message: {
-                        required: "um...yea, you have to write something to send this form.",
-                        minlength: "thats all? really?"
-                    }
-                },
-                submitHandler: function (form) {
-                    $(form).ajaxSubmit({
-                        type: "POST",
-                        data: $(form).serialize(),
-                        url: "process.php",
-                        success: function () {
-                            $('#contact-form :input').attr('disabled', 'disabled');
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $(this).find(':input').attr('disabled', 'disabled');
-                                $(this).find('label').css('cursor', 'default');
-                                $('#success').fadeIn();
-                            });
-                        },
-                        error: function () {
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $('#error').fadeIn();
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
