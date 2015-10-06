@@ -912,6 +912,10 @@ ul.footer-social,
     border-color: #222;
 }
 
+.warning {
+    color: #d9534f;
+}
+
 
 /* add on to bootstrap */
 

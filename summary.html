@@ -106,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-                    <h2>Submit Your Idea</h2>
+                    <h2>Summary</h2>
                 </div>
                 <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -117,51 +117,37 @@
                     <div class="form-group ">
                         <label for="title " class="col-sm-3 control-label ">Title</label>
                         <div class="col-sm-9 ">
-                            <input class="form-control " id="inputTitle" type="text ">
-                            <p id="errorTitle" class="warning" style="display:none">*You need to fill in a title</p>
+                            <p class="form-control" id="title"></p>
                         </div>
                     </div>
                     <div class="form-group ">
                         <label for="inputPassword3 " class="col-sm-3 control-label ">Description</label>
                         <div class="col-sm-9 ">
-                            <textarea class="form-control" id="inputDesc" rows="3 "></textarea>
+                            <p class="form-control" id="desc"></p>
                         </div>
                     </div>
                     <div class="form-group " style="margin: 8px ">
                         <!-- Drop Zone -->
-                        <label for="inputPassword3 " class="col-sm-3 control-label ">Upload files</label>
-                        <div class="col-sm-9 upload-drop-zone " id="drop-zone">
-                            <span>Just drag and drop files here</span>
+                        <label for="inputPassword3 " class="col-sm-3 control-label ">Uploaded files</label>
+                        <div class="col-sm-9 ">
+                            <div id="uploaded"></div>
                         </div>
-                    </div>
-                    <div class="form-group" style="margin: 8px">
-                        <div class="col-sm-9 col-sm-offset-3" id="holder"></div>
                     </div>
                     <div class="form-group ">
                         <label for="inputEmail3 " class="col-sm-3 control-label ">Your age</label>
                         <div class="col-sm-9 ">
-                            <input class="form-control " id="inputAge" type="text ">
+                            <p class="form-control" id="age"></p>
                         </div>
                     </div>
                     <div class="form-group ">
                         <label for="inputProfession " class="col-sm-3 control-label ">Your profession</label>
                         <div class="col-sm-9 ">
-                            <input class="form-control " id="inputProfession" type="text ">
+                            <p class="form-control" id="prof"></p>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-10">
-                            <div class="checkbox ">
-                                <label>
-                                    <input type="checkbox" id="inputAgree"> I agree to the <a href="# ">Terms and Conditions</a>.
-                                </label>
-                            </div>
-                            <p id="errorAgree" class="warning" style="display:none">*You need to agree to the terms and condition to proceed.</p>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-10">
-                            <a onclick='submit()' class="btn btn-default">Submit</a>
+                            <a class="btn btn-default">Confirm</a>
                         </div>
                     </div>
                 </form>
@@ -261,7 +247,7 @@
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
     <script src="js/scripts/main.js"></script>
-    <script src="js/scripts/submit.js"></script>
+    <script src="js/scripts/summary.js"></script>
 </body>
 
 </html>

@@ -18,6 +18,10 @@ function setUpProgressBarsAutoScroll() {
 	//binds a scroll detect to the progress bar divs
 	//loads the progressbar width to 80% once scrolling reaches
 	//then unbinds the scroll detect
+	if($('.progress-bar').length < 1) {
+		return;
+	}
+
 	$(document).bind('scroll', function(ev) {
 		var scrollOffset = $(document).scrollTop();
 		var containerOffset = $('.progress-bar').offset().top - window.innerHeight;
