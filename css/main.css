@@ -635,6 +635,10 @@ a.login:hover {
     width: 490px;
 }
 
+.voted {
+    opacity: 0.4;
+}
+
 .vote > h4 {
     color: #5dabda;
     border-bottom: 1px solid #5dabda;

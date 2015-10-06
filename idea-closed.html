@@ -247,9 +247,9 @@
                                                 </div>
                                                 <div class="media-right media-middle">
 
-                                                    <button type="button" class="btn btn-orange" style="opacity: 0.4">
-                                                        <i class="fa fa-heart"></i> Voted
-                                                    </button> <span style="margin-left:6px;"><strong>12 votes</strong></span>
+                                                    <button type="button" class="btn btn-orange voted" onclick="toggleVote('btnVote1', 'voteText1', 'voteCount1')" id="btnVote1">
+                                                        <i class="fa fa-heart"></i> <span id="voteText1">Voted</span>
+                                                    </button> <span style="margin-left:6px;"><strong><span id="voteCount1">12</span> votes</strong></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -326,9 +326,9 @@
                                                 </div>
                                                 <div class="media-right media-middle">
 
-                                                    <button type="button" class="btn btn-orange">
-                                                        <i class="fa fa-heart"></i> Vote
-                                                    </button> <span style="margin-left:6px;"><strong>12 votes</strong></span>
+                                                    <button type="button" class="btn btn-orange" id="btnVote2" onclick="toggleVote('btnVote2', 'voteText2', 'voteCount2')">
+                                                        <i class="fa fa-heart"></i> <span id="voteText2">Vote</span>
+                                                    </button> <span style="margin-left:6px;"><strong><span id="voteCount2">12</span> votes</strong></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -566,6 +566,7 @@
     <!-- Custom Functions -->
     <script src="js/custom.js "></script>
     <script src="js/scripts/main.js"></script>
+    <script src="js/scripts/idea.js"></script>
 </body>
 
 </html>
