@@ -102,7 +102,12 @@
             </ul>
 
             <div class="search pull-right">
-                <a href="#" class="login" data-toggle="modal" data-target="#login">Login </a>
+                <span id="isLoggedOut">
+                    <a href="login.html" class="login">Login </a>
+                </span>
+                <span id="isLoggedIn">
+                    <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
+                </span>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
             </div>
@@ -435,9 +440,10 @@
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
-
+    <script src="js/scripts/login.js"></script>
     <script type="text/javascript">
         $(function () {
+            verifyIfIsLoggedIn();
             /* ========================================================================= */
             /*	Contact Form
             /* ========================================================================= */
