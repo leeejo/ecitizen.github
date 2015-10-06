@@ -4,6 +4,16 @@ window.onload = function() {
 	setContactForm();
 }
 
+function verifyIfIsLoggedIn() {
+	if(localStorage["isLoggedIn"]) {
+		$('#isLoggedIn').show();
+		$('#isLoggedOut').hide();
+	} else {
+		$('#isLoggedIn').hide();
+		$('#isLoggedOut').show();		
+	}
+}
+
 function setUpProgressBarsAutoScroll() {
 	//binds a scroll detect to the progress bar divs
 	//loads the progressbar width to 80% once scrolling reaches
