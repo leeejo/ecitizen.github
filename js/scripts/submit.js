@@ -61,43 +61,6 @@ function previewfile(file) {
 }
 
 function submit() {
-	if (!validatedAllFields()) {
-		return;
-	}
 	//proceed to summary
 	window.location.href = "summary.html?d=" + encodeURIComponent(JSON.stringify(data));
-}
-
-function validatedAllFields() {
-	var isValidated = true;
-
-	var agree = document.getElementById('inputAgree').checked;
-	var title = document.getElementById('inputTitle').value.trim();
-	var desc = document.getElementById('inputDesc').value.trim();
-	var age = document.getElementById('inputAge').value.trim();
-	var prof = document.getElementById('inputProfession').value.trim();
-
-	//check
-	if (title == '') {
-		isValidated = false;
-		$('#errorTitle').show();
-	} else {
-		$('#errorTitle').hide();
-	}
-
-	data = {};
-	data["title"] = title;
-	data["desc"] = desc;
-	data["age"] = age;
-	data["prof"] = prof;
-	data["uploaded"] = JSON.stringify(files);
-
-	if (agree) {
-		$('#errorAgree').hide();
-	} else {
-		$('#errorAgree').show();
-		isValidated = false;
-	}
-
-	return isValidated;
 }
