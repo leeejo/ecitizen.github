@@ -19,23 +19,18 @@
     <meta name="author" content="GDS-PDD">
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
     <!-- Google Font -->
-
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic%7COpen+Sans+Condensed:700" rel="stylesheet">
     <script>
-        WebFont.load({
-            google: {
-                families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic,700italic', 'Open Sans Condensed:700']
-            }
-        });
+    WebFont.load({
+        google: {
+            families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic,700italic', 'Open Sans Condensed:700']
+        }
+    });
     </script>
-
     <!-- CSS
-		================================================== -->
+        ================================================== -->
     <!-- Fontawesome Icon font -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Twitter Bootstrap css -->
@@ -48,26 +43,21 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- media-queries -->
     <link rel="stylesheet" href="css/media-queries.css">
-
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-
 </head>
 
 <body id="body">
-
     <!-- preloader -->
     <div id="preloader">
         <img src="img/preloader.gif" alt="Preloader">
     </div>
     <!-- end preloader -->
-
     <!-- 
         Fixed Navigation
         ==================================== -->
     <header id="navigation" class="navbar">
         <div class="container">
-
             <div class="navbar-header">
                 <!-- responsive nav button -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -75,22 +65,18 @@
                     <i class="fa fa-bars fa-2x"></i>
                 </button>
                 <!-- /responsive nav button -->
-
                 <!-- logo -->
                 <a class="navbar-brand" href="#body">
                     <h1 id="logo">
-							<img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-red2.png" alt="eCitizen Ideas!" height="40">
-						</h1>
+                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-red2.png" alt="eCitizen Ideas!" height="40">
+                        </h1>
                 </a>
                 <!-- /logo -->
             </div>
-
             <div class="navbar-lionhead pull-right">
                 <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-singaporegov.png" alt="Singapore" height="30" /></div>
-
         </div>
     </header>
-
     <!-- main nav -->
     <nav class="collapse navbar-collapse" role="navigation">
         <div class="container">
@@ -100,27 +86,30 @@
                 <li><a href="#works">Leaderboard</a></li>
                 <li><a href="#team">Funding</a></li>
             </ul>
-
             <div class="search pull-right">
-                <a href="login.html" class="login"> Login </a>
+                <span id="isLoggedOut">
+                    <a href="login.html" class="login">Login </a>
+                </span>
+                <span id="isLoggedIn">
+                    <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
+                </span>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
             </div>
         </div>
     </nav>
     <!-- /main nav -->
-
     <!--
         End Fixed Navigation
         ==================================== -->
-
     <section id="idea" class="idea">
         <div class="container">
+            <div id="confirmSubmit" class="alert alert-success alert-dismissible" role="alert" style="display:none">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Success!</strong> You have successfully submitted a new idea.
+            </div>
             <div class="row">
-
-
                 <div id="idea" class="idea col-md-9 clearfix">
-
                     <div class="row">
                         <ol class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
@@ -128,17 +117,13 @@
                             <li class="active">Good Neighbours Video</li>
                         </ol>
                     </div>
-
                     <div class="sec-title wow fadeInUp animated clearfix" data-wow-duration="700ms">
                         <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/HDBVideo_thumb.jpg" class="pull-left" style="margin-right: 20px;" height="90" />
                         <h2>
 Good Neighbours Video</h2>
                         <p>Posted on 5 May 2015</p>
                     </div>
-
-
                     <div class="tabpanel wow fadeInUp animated" data-wow-duration="500ms" role="tabpanel">
-
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a>
                             </li>
@@ -148,19 +133,13 @@ Good Neighbours Video</h2>
                             <li role="presentation"><a href="#terms" aria-controls="terms" role="tab" data-toggle="tab">Terms and Conditions</a>
                             </li>
                         </ul>
-
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="overview">
                                 <h3>Overview</h3>
                                 <p><strong>What does a good neighbour mean to you?</strong></p>
-
                                 <p>The Good Neighbours Video Competition was launched during HDB Community Week 2014 to encourage participants to express their thoughts creatively through a video recording on the theme “what does a good neighbour mean to you?”</p>
-
                                 <p>The competition was held from 24 May to 30 Nov 2014, with close to 4,000 video entries submitted. These videos expressed neighbourliness through various ways such as story-telling, animation and acting. 13 entries were selected for the top 3 and 10 merit prizes. The public could also vote for their favourite video among all the shortlisted entries from 6 to 27 Mar 2015. The video with the highest number of votes will receive the Most Popular Video Award.</p>
-
-
                             </div>
-
                             <div role="tabpanel" class="tab-pane fade" id="guidelines">
                                 <h3>Guidelines</h3>
                                 <ol>
@@ -175,12 +154,10 @@ Good Neighbours Video</h2>
                                             <li>All participants are required to include their full name (as in NRIC/ Passport) and video title upon submission</li>
                                             <li>Shortlisted participants must complete a declaration form; filling in their personal particulars in the compulsory fields (i.e. marked with asterisks) and declaring that they have written consent from people featured or identifiable in their video(s)</li>
                                         </ul>
-
                                     </li>
                                     <li>By submitting entries, participants have acknowledged that they have read, understood and agreed to Terms and Conditions</li>
                                 </ol>
                             </div>
-
                             <div role="tabpanel" class="tab-pane fade" id="terms">
                                 <h3>Terms and Conditions</h3>
                                 <p>By participating in the contest through submitting a contest entry form, the participant shall be deemed to have accepted and agreed to be bound by all the terms and conditions set out herein.
@@ -189,17 +166,10 @@ Good Neighbours Video</h2>
                             <!-- end tab-content -->
                         </div>
                         <!-- end tabpanel -->
-
                     </div>
-
-
-
                 </div>
                 <!-- // close ideas listing -->
-
-
                 <div class="vote col-md-3 text-center">
-
                     <div class="clearfix" style="margin-bottom: 20px;">
                         <span class="col-sm-4 no-gutter"><strong><i class="fa fa-lightbulb-o"></i>
  15</strong> <br>ideas</span>
@@ -207,50 +177,35 @@ Good Neighbours Video</h2>
  3</strong> <br>votes</span>
                         <span class="col-sm-4 no-gutter"><strong><i class="fa fa-commenting"></i>
  17</strong> <br>comments</span></div>
-
                     <a href="submit.html" type="button" class="btn btn-lg btn-group-justified btn-orange">
                         Submit Your Idea
                     </a>
-
                     <p style="margin: 12px 0;"><i class="fa fa-clock-o"></i> 5 days left </p>
                     <button type="button" class="btn btn-lg btn-group-justified">
                         <i class="fa fa-plus"></i> &nbsp;Follow Challenges
                     </button>
-
                     <button type="button" class="btn btn-primary btn-lg btn-group-justified">
                         <i class="fa fa-facebook"></i> &nbsp;Share on Facebook
                     </button>
-
                     <h4>Prizes</h4>
                     <img src="img/prizes.jpg" />
-
                     <h4>How to Win</h4>
                     <p class="text-left">Illustrate your idea with text, images, presentation slides or videos.</p>
-
                     <h4>Judging Criteria</h4>
                     <img src="img/judge.jpg" />
                 </div>
-
-
             </div>
         </div>
     </section>
-
-
-
-
-
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="footer-single">
                         <h6>How It Works</h6>
                         <p>Submit innovative ideas to help solve challenges that Singapore may be facing. Rally your friends to support your ideas or simply vote for the best ones. Stand a chance to win attractive prizes and see your ideas come to live!</p>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="footer-single">
                         <h6>Subscribe </h6>
@@ -261,7 +216,6 @@ Good Neighbours Video</h2>
                         <p>Subscribe to eCitizen ideas! and be the first to hear about exciting new challenges.</p>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     <div class="footer-single">
                         <h6>Explore</h6>
@@ -273,7 +227,6 @@ Good Neighbours Video</h2>
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="footer-single">
                         <h6>Support</h6>
@@ -287,7 +240,6 @@ Good Neighbours Video</h2>
                         </ul>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -298,11 +250,9 @@ Good Neighbours Video</h2>
             </div>
         </div>
     </footer>
-
     <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
-
     <!-- Essential jQuery Plugins
-		================================================== -->
+        ================================================== -->
     <!-- Main jQuery -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <!-- Single Page Nav -->
@@ -329,74 +279,19 @@ Good Neighbours Video</h2>
     <!-- jquery easing -->
     <script src="js/wow.min.js"></script>
     <script>
-        var wow = new WOW({
-            boxClass: 'wow', // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset: 120, // distance to the element when triggering the animation (default is 0)
-            mobile: false, // trigger animations on mobile devices (default is true)
-            live: true // act on asynchronously loaded content (default is true)
-        });
-        wow.init();
+    var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 120, // distance to the element when triggering the animation (default is 0)
+        mobile: false, // trigger animations on mobile devices (default is true)
+        live: true // act on asynchronously loaded content (default is true)
+    });
+    wow.init();
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            /* ========================================================================= */
-            /*	Contact Form
-            /* ========================================================================= */
-
-            $('#contact-form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: {
-                        required: "come on, you have a name don't you?",
-                        minlength: "your name must consist of at least 2 characters"
-                    },
-                    email: {
-                        required: "no email, no message"
-                    },
-                    message: {
-                        required: "um...yea, you have to write something to send this form.",
-                        minlength: "thats all? really?"
-                    }
-                },
-                submitHandler: function (form) {
-                    $(form).ajaxSubmit({
-                        type: "POST",
-                        data: $(form).serialize(),
-                        url: "process.php",
-                        success: function () {
-                            $('#contact-form :input').attr('disabled', 'disabled');
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $(this).find(':input').attr('disabled', 'disabled');
-                                $(this).find('label').css('cursor', 'default');
-                                $('#success').fadeIn();
-                            });
-                        },
-                        error: function () {
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $('#error').fadeIn();
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts/main.js"></script>
+    <script src="js/scripts/ongoing.js"></script>
 </body>
 
 </html>

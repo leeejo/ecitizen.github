@@ -19,23 +19,18 @@
     <meta name="author" content="GDS-PDD">
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
     <!-- Google Font -->
-
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic%7COpen+Sans+Condensed:700" rel="stylesheet">
     <script>
-        WebFont.load({
-            google: {
-                families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic,700italic', 'Open Sans Condensed:700']
-            }
-        });
+    WebFont.load({
+        google: {
+            families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic,700italic', 'Open Sans Condensed:700']
+        }
+    });
     </script>
-
     <!-- CSS
-		================================================== -->
+        ================================================== -->
     <!-- Fontawesome Icon font -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Twitter Bootstrap css -->
@@ -48,26 +43,21 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- media-queries -->
     <link rel="stylesheet" href="css/media-queries.css">
-
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-
 </head>
 
 <body id="body">
-
     <!-- preloader -->
     <div id="preloader">
         <img src="img/preloader.gif" alt="Preloader">
     </div>
     <!-- end preloader -->
-
     <!-- 
         Fixed Navigation
         ==================================== -->
     <header id="navigation" class="navbar">
         <div class="container">
-
             <div class="navbar-header">
                 <!-- responsive nav button -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -75,22 +65,18 @@
                     <i class="fa fa-bars fa-2x"></i>
                 </button>
                 <!-- /responsive nav button -->
-
                 <!-- logo -->
                 <a class="navbar-brand" href="#body">
                     <h1 id="logo">
-							<img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-red2.png" alt="eCitizen Ideas!" height="40">
-						</h1>
+                            <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-red2.png" alt="eCitizen Ideas!" height="40">
+                        </h1>
                 </a>
                 <!-- /logo -->
             </div>
-
             <div class="navbar-lionhead pull-right">
                 <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/logo-singaporegov.png" alt="Singapore" height="30" /></div>
-
         </div>
     </header>
-
     <!-- main nav -->
     <nav class="collapse navbar-collapse" role="navigation">
         <div class="container">
@@ -100,109 +86,94 @@
                 <li><a href="leaderboard.html">Leaderboard</a></li>
                 <li><a href="funding.html">Funding</a></li>
             </ul>
-
             <div class="search pull-right">
-                <a href="#" class="login" data-toggle="modal" data-target="#login">Login </a>
+                <span id="isLoggedOut">
+                    <a href="login.html" class="login">Login </a>
+                </span>
+                <span id="isLoggedIn">
+                    <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
+                </span>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
             </div>
         </div>
     </nav>
     <!-- /main nav -->
-
     <!--
         End Fixed Navigation
         ==================================== -->
-
-
     <section id="submit" class="submit">
         <div class="container">
             <div class="row">
-
                 <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
                     <h2>Submit Your Idea</h2>
                 </div>
-
                 <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
             </div>
-
-
             <div class="contact-form">
-                <form class="form-horizontal wow fadeInUp animated" style="width:60%; margin: 0 auto;" action="submit-summary.html" data-wow-duration="800ms">
-
-                    <div class="form-group ">
-                        <label for="title " class="col-sm-3 control-label ">Title</label>
+                <form class="form-horizontal wow fadeInUp animated" style="width:60%; margin: 0 auto;" data-wow-duration="800ms">
+                    <div class="form-group">
+                        <label for="title" class="col-sm-3 control-label ">Title</label>
                         <div class="col-sm-9 ">
-                            <input class="form-control " id="inputTitle " type="text ">
+                            <input class="form-control " id="inputTitle" type="text ">
                         </div>
                     </div>
-
                     <div class="form-group ">
-                        <label for="inputPassword3 " class="col-sm-3 control-label ">Description</label>
+                        <label for="inputPassword3" class="col-sm-3 control-label ">Description</label>
                         <div class="col-sm-9 ">
-                            <textarea class="form-control " rows="3 "></textarea>
+                            <textarea class="form-control" id="inputDesc" rows="3 "></textarea>
                         </div>
                     </div>
-
-                    <div class="form-group " style="margin: 8px ">
+                    <div class="form-group" style="margin: 8px ">
                         <!-- Drop Zone -->
-                        <label for="inputPassword3 " class="col-sm-3 control-label ">Upload files</label>
-                        <div class="col-sm-9 upload-drop-zone " id="drop-zone ">
-                            Just drag and drop files here
+                        <label for="inputPassword3 " class="col-sm-3 control-label">Upload files</label>
+                        <div class="col-sm-9 upload-drop-zone" id="drop-zone">
+                            <span>Just drag and drop files here</span>
                         </div>
                     </div>
-
+                    <div class="form-group" style="margin: 8px">
+                        <div class="col-sm-9 col-sm-offset-3" id="holder"></div>
+                    </div>
                     <div class="form-group ">
                         <label for="inputEmail3 " class="col-sm-3 control-label ">Your age</label>
                         <div class="col-sm-9 ">
-                            <input class="form-control " id="inputEmail3 " type="text ">
+                            <input class="form-control " id="inputAge" type="text ">
                         </div>
                     </div>
-
                     <div class="form-group ">
-                        <label for="inputEmail3 " class="col-sm-3 control-label ">Your profession</label>
+                        <label for="inputProfession " class="col-sm-3 control-label ">Your profession</label>
                         <div class="col-sm-9 ">
-                            <input class="form-control " id="inputEmail3 " type="text ">
+                            <input class="form-control " id="inputProfession" type="text ">
                         </div>
                     </div>
-
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-10">
                             <div class="checkbox ">
                                 <label>
-                                    <input type="checkbox"> I agree to the <a href="# ">Terms and Conditions</a>.
+                                    <input type="checkbox" id="inputAgree"> I agree to the <a href="# ">Terms and Conditions</a>.
                                 </label>
                             </div>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-10">
-                            <button type="submit " class="btn btn-default">Submit</button>
+                            <a onclick='submit()' class="btn btn-default">Submit</a>
                         </div>
                     </div>
                 </form>
             </div>
     </section>
-
-
-
-
-
-
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="footer-single">
                         <h6>How It Works</h6>
                         <p>Submit innovative ideas to help solve challenges that Singapore may be facing. Rally your friends to support your ideas or simply vote for the best ones. Stand a chance to win attractive prizes and see your ideas come to live!</p>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="footer-single">
                         <h6>Subscribe </h6>
@@ -213,7 +184,6 @@
                         <p>Subscribe to eCitizen ideas! and be the first to hear about exciting new challenges.</p>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     <div class="footer-single">
                         <h6>Explore</h6>
@@ -225,7 +195,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="footer-single">
                         <h6>Support</h6>
@@ -239,7 +208,6 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -250,11 +218,9 @@
             </div>
         </div>
     </footer>
-
     <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
-
     <!-- Essential jQuery Plugins
-		================================================== -->
+        ================================================== -->
     <!-- Main jQuery -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <!-- Single Page Nav -->
@@ -281,74 +247,19 @@
     <!-- jquery easing -->
     <script src="js/wow.min.js"></script>
     <script>
-        var wow = new WOW({
-            boxClass: 'wow', // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset: 120, // distance to the element when triggering the animation (default is 0)
-            mobile: false, // trigger animations on mobile devices (default is true)
-            live: true // act on asynchronously loaded content (default is true)
-        });
-        wow.init();
+    var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 120, // distance to the element when triggering the animation (default is 0)
+        mobile: false, // trigger animations on mobile devices (default is true)
+        live: true // act on asynchronously loaded content (default is true)
+    });
+    wow.init();
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-            /* ========================================================================= */
-            /*	Contact Form
-            /* ========================================================================= */
-
-            $('#contact-form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: {
-                        required: "come on, you have a name don't you?",
-                        minlength: "your name must consist of at least 2 characters"
-                    },
-                    email: {
-                        required: "no email, no message"
-                    },
-                    message: {
-                        required: "um...yea, you have to write something to send this form.",
-                        minlength: "thats all? really?"
-                    }
-                },
-                submitHandler: function (form) {
-                    $(form).ajaxSubmit({
-                        type: "POST",
-                        data: $(form).serialize(),
-                        url: "process.php",
-                        success: function () {
-                            $('#contact-form :input').attr('disabled', 'disabled');
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $(this).find(':input').attr('disabled', 'disabled');
-                                $(this).find('label').css('cursor', 'default');
-                                $('#success').fadeIn();
-                            });
-                        },
-                        error: function () {
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $('#error').fadeIn();
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts/main.js"></script>
+    <script src="js/scripts/submit.js"></script>
 </body>
 
 </html>

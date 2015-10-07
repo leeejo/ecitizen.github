@@ -632,7 +632,11 @@ a.login:hover {
 }
 
 .media-body {
-    width: 590px;
+    width: 490px;
+}
+
+.voted {
+    opacity: 0.4;
 }
 
 .vote > h4 {
@@ -696,23 +700,6 @@ a.login:hover {
 .actionBox {
     border-top: 1px solid #bbb;
     padding: 10px;
-}
-
-
-/*=========================================
-	Leaderboard
-==========================================*/
-
-.profile-board {}
-
-.profile-board img {
-    float: left;
-    margin-right: 20px;
-}
-
-.profile-board .panel-heading {
-    font-size: 2.6em !important;
-    line-height: 1.8;
 }
 
 
@@ -923,6 +910,10 @@ ul.footer-social,
 .upload-drop-zone.drop {
     color: #222;
     border-color: #222;
+}
+
+.warning {
+    color: #d9534f;
 }
 
 

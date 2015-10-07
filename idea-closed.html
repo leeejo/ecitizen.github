@@ -102,7 +102,12 @@
             </ul>
 
             <div class="search pull-right">
-                <a href="login.html" class="login">Login </a>
+                <span id="isLoggedOut">
+                    <a href="login.html" class="login">Login </a>
+                </span>
+                <span id="isLoggedIn">
+                    <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
+                </span>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
             </div>
@@ -127,8 +132,6 @@
                             <li class="active">Be The Spark!</li>
                         </ol>
                     </div>
-
-                    <div class="alert alert-info" role="alert">This challenged had ended.</div>
 
                     <div class="sec-title wow fadeInUp animated clearfix" data-wow-duration="700ms">
                         <img src="http://www.ecitizen.gov.sg/Highlights/PublishingImages/BeTheSpark_tb_140x140px.gif" class="pull-left" style="margin-right: 20px;" height="90" />
@@ -244,9 +247,9 @@
                                                 </div>
                                                 <div class="media-right media-middle">
 
-                                                    <button type="button" class="btn btn-orange" style="opacity: 0.4">
-                                                        <i class="fa fa-heart"></i> Voted
-                                                    </button> <span style="margin-left:6px;"><strong>12 votes</strong></span>
+                                                    <button type="button" class="btn btn-orange voted" onclick="toggleVote('btnVote1', 'voteText1', 'voteCount1')" id="btnVote1">
+                                                        <i class="fa fa-heart"></i> <span id="voteText1">Voted</span>
+                                                    </button> <span style="margin-left:6px;"><strong><span id="voteCount1">12</span> votes</strong></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -323,9 +326,9 @@
                                                 </div>
                                                 <div class="media-right media-middle">
 
-                                                    <button type="button" class="btn btn-orange">
-                                                        <i class="fa fa-heart"></i> Vote
-                                                    </button> <span style="margin-left:6px;"><strong>12 votes</strong></span>
+                                                    <button type="button" class="btn btn-orange" id="btnVote2" onclick="toggleVote('btnVote2', 'voteText2', 'voteCount2')">
+                                                        <i class="fa fa-heart"></i> <span id="voteText2">Vote</span>
+                                                    </button> <span style="margin-left:6px;"><strong><span id="voteCount2">12</span> votes</strong></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -429,7 +432,7 @@
                         <span class="col-sm-4 no-gutter"><strong><i class="fa fa-commenting"></i>
  17</strong> <br>comments</span></div>
 
-                    <button type="button" class="btn btn-lg btn-group-justified btn-default disabled">
+                    <button type="button" class="btn btn-lg btn-group-justified btn-default">
                         Submission had closed </button>
 
                     <p style="margin: 12px 0;"><i class="fa fa-clock-o"></i> 5 days left </p>
@@ -562,7 +565,8 @@
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js "></script>
-
+    <script src="js/scripts/main.js"></script>
+    <script src="js/scripts/idea.js"></script>
 </body>
 
 </html>

@@ -95,14 +95,19 @@
     <nav class="collapse navbar-collapse" role="navigation">
         <div class="container">
             <ul id="nav" class="nav navbar-nav pull-left">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="challenge.html">Challenges</a></li>
-                <li><a href="leaderboard.html">Leaderboard</a></li>
-                <li><a class="current" href="#body">Funding</a></li>
+                <li class="current"><a href="#body">Home</a></li>
+                <li><a href="#features">Challenges</a></li>
+                <li><a href="#works">Leaderboard</a></li>
+                <li><a href="#team">Funding</a></li>
             </ul>
 
             <div class="search pull-right">
-                <a href="login.html" class="login">Login </a>
+                <span id="isLoggedOut">
+                    <a href="login.html" class="login">Login </a>
+                </span>
+                <span id="isLoggedIn">
+                    <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
+                </span>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
             </div>
@@ -115,20 +120,8 @@
         ==================================== -->
 
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="row mb50">
-
-                <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-                    <h2>Funding
-                </div>
-
-                <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms" style="display:none;">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                </div>
-                </div>
-            </div>
-
+    <section>
+        <!--// content area here --->
     </section>
 
 
@@ -161,10 +154,10 @@
                     <div class="footer-single">
                         <h6>Explore</h6>
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="funding.html">Funding</a></li>
-                            <li><a href="challenge.html">Challenges</a></li>
-                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Funding</a></li>
+                            <li><a href="#">Challenges</a></li>
+                            <li><a href="#">Leaderboard</a></li>
                         </ul>
                     </div>
                 </div>
@@ -173,7 +166,7 @@
                     <div class="footer-single">
                         <h6>Support</h6>
                         <ul>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Rate Us</a></li>
@@ -235,63 +228,8 @@
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
+    <script src="js/scripts/main.js"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            /* ========================================================================= */
-            /*	Contact Form
-            /* ========================================================================= */
-
-            $('#contact-form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    name: {
-                        required: "come on, you have a name don't you?",
-                        minlength: "your name must consist of at least 2 characters"
-                    },
-                    email: {
-                        required: "no email, no message"
-                    },
-                    message: {
-                        required: "um...yea, you have to write something to send this form.",
-                        minlength: "thats all? really?"
-                    }
-                },
-                submitHandler: function (form) {
-                    $(form).ajaxSubmit({
-                        type: "POST",
-                        data: $(form).serialize(),
-                        url: "process.php",
-                        success: function () {
-                            $('#contact-form :input').attr('disabled', 'disabled');
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $(this).find(':input').attr('disabled', 'disabled');
-                                $(this).find('label').css('cursor', 'default');
-                                $('#success').fadeIn();
-                            });
-                        },
-                        error: function () {
-                            $('#contact-form').fadeTo("slow", 0.15, function () {
-                                $('#error').fadeIn();
-                            });
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
