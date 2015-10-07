@@ -171,6 +171,10 @@ a.btn-orange,
     background-color: #DDD;
 }
 
+#single .container {
+    width: 70%;
+}
+
 
 /*=========================================
 	Header
@@ -241,7 +245,7 @@ a.login:hover {
         padding: 0 6px 0 30px;
         margin: 0;
     }
-    #body-logged .login:before {
+    #isLoggedIn .login:before {
         font: normal 14px/1 "FontAwesome";
         content: "\f007";
         padding-left: 6px;
@@ -632,7 +636,7 @@ a.login:hover {
 }
 
 .media-body {
-    width: 490px;
+    width: 70%;
 }
 
 .voted {
