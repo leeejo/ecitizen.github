@@ -13,7 +13,7 @@ window.ondragover = function(e) {
 }
 window.ondrop = function(e) {
 	e.preventDefault();
-	var length = e.dataTransfer.items.length;
+	var length = e.dataTransfer.files.length;
 	for (var i = 0; i < length; i++) {
 		upload(e.dataTransfer.files[i]);
 	}
@@ -26,9 +26,16 @@ function upload(file) {
 
 function reloadFileList() {
 	holder.innerHTML = "";
+	var html = "";
 	for (var i = 0; i < files.length; i++) {
-		holder.innerHTML += "<span class='btn btn-default btn-block'>" + files[i] + "<a style='float: right' onclick=\"removeFile('" + files[i] + "')\"><i class='fa fa-times'></i></a></span>";
+		html += "<span class='btn btn-default btn-block'>";
+		html += files[i];
+		html += "<i class='fa fa-times' style='position:absolute;right:25px;padding:2px;' onclick=\"removeFile('";
+		html += files[i];
+		html += "')\"></i></span>";
 	}
+	holder.innerHTML = html;
+	console.log(html);
 }
 
 function removeFile(name) {
