@@ -7,7 +7,6 @@ var tests = {
 
 var holder = document.getElementById('holder');
 var files = [];
-var data;
 
 window.ondragover = function(e) {
 	e.preventDefault()
@@ -21,9 +20,7 @@ window.ondrop = function(e) {
 }
 
 function upload(file) {
-	console.log(file);
 	files.push(file.name);
-	console.log(files);
 	reloadFileList();
 }
 
@@ -61,6 +58,18 @@ function previewfile(file) {
 }
 
 function submit() {
+	var title = document.getElementById('inputTitle').value.trim();
+	var desc = document.getElementById('inputDesc').value.trim();
+	var age = document.getElementById('inputAge').value.trim();
+	var prof = document.getElementById('inputProfession').value.trim();
+
+	var data = {};
+	data["title"] = title;
+	data["desc"] = desc;
+	data["age"] = age;
+	data["prof"] = prof;
+	data["uploaded"] = JSON.stringify(files);
+
 	//proceed to summary
 	window.location.href = "summary.html?d=" + encodeURIComponent(JSON.stringify(data));
 }

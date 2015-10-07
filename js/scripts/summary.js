@@ -22,9 +22,9 @@ $(function () {
 });
 
 function confirm() {
-	window.location.href = "challenge.html?s=1";
+	window.location.href = "idea-ongoing.html?s=1";
 }
 
 function cancel() {
-	window.location.href = "challenge.html";
+	window.location.href = "idea-ongoing.html";
 }
