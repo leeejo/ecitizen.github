@@ -42,22 +42,22 @@ $(document).ready(function () {
     /*	Fix Slider Height
     /* ========================================================================= */
 
-    var slideHeight = $(window).height();
-    console.log("window height " + slideHeight);
+    // var slideHeight = $(window).height();
+    // console.log("window height " + slideHeight);
 
-    var slideP = slideHeight * 0.3;
-    console.log("slider view ht " + slideP);
-    var slideH = slideHeight - slideP;
-    console.log("final ht" + slideH)
+    // var slideP = slideHeight * 0.3;
+    // console.log("slider view ht " + slideP);
+    // var slideH = slideHeight - slideP;
+    // console.log("final ht" + slideH)
 
-    /*$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);*/
-    $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height', slideH);
+    // /*$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);*/
+    // $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height', slideH);
 
-    $(window).resize(function () {
-        'use strict',
-        /*$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);*/
-        $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height', slideH);
-    });
+    // $(window).resize(function () {
+    //     'use strict',
+    //     /*$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);*/
+    //     $('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height', slideH);
+    // });
 
 
     /* ========================================================================= */

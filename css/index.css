@@ -1,4 +1,10 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
 	margin: auto;
+	width: 100%;
+}
+
+.carousel {
+	height: 330px;
+	overflow:hidden;
 }
