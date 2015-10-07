@@ -13,7 +13,7 @@ window.ondragover = function(e) {
 }
 window.ondrop = function(e) {
 	e.preventDefault();
-	var length = e.dataTransfer.items.length;
+	var length = e.dataTransfer.files.length;
 	for (var i = 0; i < length; i++) {
 		upload(e.dataTransfer.files[i]);
 	}
@@ -27,7 +27,12 @@ function upload(file) {
 function reloadFileList() {
 	holder.innerHTML = "";
 	for (var i = 0; i < files.length; i++) {
-		holder.innerHTML += "<span class='btn btn-default btn-block'>" + files[i] + "<a style='float: right' onclick=\"removeFile('" + files[i] + "')\"><i class='fa fa-times'></i></a></span>";
+		// holder.innerHTML += "<span class='btn btn-default btn-block'>" + files[i] + "<a style='float: right' onclick=\"removeFile('" + files[i] + "')\"><i class='fa fa-times'></i></a></span>";
+		holder.innerHTML += "<span class='btn btn-default btn-block'>";
+		holder.innerHTML += files[i];
+		holder.innerHTML += "<a style='float:right' onclick=\"removeFile('" + files[i] + "')\">"
+		holder.innerHTML += "<i class='fa fa-times'></i>";
+		holder.innerHTML += "</a></span>";
 	}
 }
 
