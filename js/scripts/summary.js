@@ -20,3 +20,11 @@ $(function () {
 	}
 	document.getElementById('uploaded').innerHTML = html;
 });
+
+function confirm() {
+	window.location.href = "challenge.html?s=1";
+}
+
+function cancel() {
+	window.location.href = "challenge.html";
+}
