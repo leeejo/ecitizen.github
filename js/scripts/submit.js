@@ -26,14 +26,16 @@ function upload(file) {
 
 function reloadFileList() {
 	holder.innerHTML = "";
+	var html = "";
 	for (var i = 0; i < files.length; i++) {
-		// holder.innerHTML += "<span class='btn btn-default btn-block'>" + files[i] + "<a style='float: right' onclick=\"removeFile('" + files[i] + "')\"><i class='fa fa-times'></i></a></span>";
-		holder.innerHTML += "<span class='btn btn-default btn-block'>";
-		holder.innerHTML += files[i];
-		holder.innerHTML += "<a style='float:right' onclick=\"removeFile('" + files[i] + "')\">"
-		holder.innerHTML += "<i class='fa fa-times'></i>";
-		holder.innerHTML += "</a></span>";
+		html += "<span class='btn btn-default btn-block'>";
+		html += files[i];
+		html += "<i class='fa fa-times' style='position:absolute;right:25px;padding:2px;' onclick=\"removeFile('";
+		html += files[i];
+		html += "')\"></i></span>";
 	}
+	holder.innerHTML = html;
+	console.log(html);
 }
 
 function removeFile(name) {
