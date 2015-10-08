@@ -488,11 +488,6 @@ a.login:hover {
     display: none;
 }
 
-.challenge-box:nth-child(-n+5) {
-    margin-bottom: 20px;
-}
-
-
 /*=========================================
 	Challenges
 ==========================================*/
