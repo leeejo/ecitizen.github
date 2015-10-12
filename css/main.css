@@ -350,12 +350,14 @@ a.login:hover {
     border-bottom: 1px solid #f0f0f0;
 }
 
+
 /*#slider .carousel-inner .item {
     background-size: cover;
     background: no-repeat;
     background-position: 50% 0;
 }
 */
+
 .social-links {
     margin-top: 5%;
 }
@@ -487,6 +489,7 @@ a.login:hover {
 .mix {
     display: none;
 }
+
 
 /*=========================================
 	Challenges
@@ -662,7 +665,7 @@ a.login:hover {
 .commentList {
     padding: 0;
     list-style: none;
-    max-height: 200px;
+    max-height: 80px;
     overflow: auto;
 }
 
