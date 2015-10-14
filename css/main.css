@@ -136,6 +136,10 @@ body > section,
     margin-bottom: 50px;
 }
 
+.mb20 {
+    margin-bottom: 20px;
+}
+
 #preloader {
     background-color: #fff;
     height: 100%;
