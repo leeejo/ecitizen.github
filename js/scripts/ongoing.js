@@ -14,6 +14,7 @@ function goToSubmit() {
 		window.location.href = "submit.html";
 	} else {
 		//go to login page
+		localStorage["redirectFrom"] = "submit.html";
 		window.location.href = "login.html";
 	}
 }

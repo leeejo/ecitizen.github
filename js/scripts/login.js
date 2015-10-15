@@ -1,4 +1,7 @@
 function loginUsingSingpass() {
 	localStorage["isLoggedIn"] = true;
-	window.location.href = "challenge.html";
+	if (localStorage["redirectFrom"]) {
+		window.location.href = localStorage["redirectFrom"];
+		localStorage["redirectFrom"] = null;
+	}
 }

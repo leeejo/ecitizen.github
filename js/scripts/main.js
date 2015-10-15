@@ -3,6 +3,11 @@ window.onload = function () {
     verifyIfIsLoggedIn();
 }
 
+function goToLogin() {
+    localStorage["redirectFrom"] = window.location.href;
+    window.location.href = "login.html";
+}
+
 function verifyIfIsLoggedIn() {
     if (localStorage["isLoggedIn"]) {
         $('#isLoggedIn').show();
