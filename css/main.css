@@ -171,7 +171,8 @@ a.btn-orange,
     box-shadow: none;
 }
 
-.progress-bar-grey {
+.progress-bar-grey,
+.label-grey {
     background-color: #DDD;
 }
 

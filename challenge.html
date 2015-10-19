@@ -91,7 +91,7 @@
                     <a onclick="goToLogin()" class="login">Login </a>
                 </span>
                 <span id="isLoggedIn">
-                    <span>Welcome back, </span><a href="profile.html" class="login">charles.pctl </a>
+                    <span>Welcome back, </span><a href="" class="login">charles.pctl </a>
                 </span>
                 <button type="submit " class="btn"><i class="fa fa-search"></i>
                 </button>
@@ -116,7 +116,8 @@
                 <div class="pull-left challenge-filter wow fadeInRight animated" data-wow-duration="500ms">
                     <ul class="text-center">
                         <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-                        <li><a href="javascript:;" data-filter=".ongoing" class="filter">Ongoing</a></li>
+                        <li><a href="javascript:;" data-filter=".ongoing" class="filter">Open</a></li>
+                        <li><a href="javascript:;" data-filter=".vote" class="filter">Vote</a></li>
                         <li><a href="javascript:;" data-filter=".closed" class="filter">Closed</a></li>
                     </ul>
                 </div>
@@ -136,7 +137,9 @@
                             <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/HDBVideo_thumb.jpg" alt="" class="img-responsive">
                         </div>
                         <h4>Good Neighbours Video Competition</h4></a>
-                    <p class="organiser">Organised by HDB</p>
+                    <div class="clearfix"><span class="pull-right label label-danger">Open</span>
+                        <p class="organiser">Organised by HDB</p>
+                    </div>
                     <p class="description">Inspire others towards making your neighbourhoods a better place to live in! Organised by the Housing &amp; Development Board (HDB).</p>
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
@@ -156,7 +159,9 @@
                             <img src="http://ideascale.com/userimages/accounts/91/915788/NEA-SES-ECitizen-thumbnail_180x180.jpg " alt=" " class="img-responsive ">
                         </div>
                         <h4>Singapore Environment Story</h4></a>
-                    <p class="organiser">Organised by NEA</p>
+                    <div class="clearfix"><span class="pull-right label label-danger">Open</span>
+                        <p class="organiser">Organised by NEA</p>
+                    </div>
                     <p class="description">What are your dreams and aspirations of the future environment of Singapore? If you have a story to share, or if you know someone who has played a part in it.</p>
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
@@ -176,7 +181,9 @@
                             <img src="http://ideascale.com/userimages/accounts/91/915788/SGC2015-eMaterial_Thumbnail_180x180.jpg " alt=" " class="img-responsive ">
                         </div>
                         <h4>SG GeoSpatial Challenge 2015</h4></a>
-                    <p class="organiser ">Organised by SLA</p>
+                    <div class="clearfix"><span class="pull-right label label-danger">Open</span>
+                        <p class="organiser ">Organised by SLA</p>
+                    </div>
                     <p class="description ">SGC2015 aims to encourage the use of Geospatial Information Science and Technology (GIST) in schools by introducing sensors technology.</p>
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
@@ -190,61 +197,69 @@
                 </figure>
                 <!-- end single member -->
                 <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix ongoing">
                     <a href="#">
                         <div class="challenge-thumb ">
                             <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/CoolLogo2b.jpg " alt=" " class="img-responsive ">
                         </div>
                         <h4>Cool Ideas for Better HDB Living
                         </h4></a>
-                    <p class="organiser ">Organised by HDB</p>
+                    <div class="clearfix"><span class="pull-right label label-danger">Open</span>
+                        <p class="organiser ">Organised by HDB</p>
+                    </div>
                     <p class="description ">Most would agree that a home is more than just a space. It is also a place where you can showcase your preferred tastes and infuse your personality.</p>
                     <div class="stats clearfix">
                         <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"></span></div>
+                        <span class="col-sm-4 no-gutter text-right"><strong>17</strong> <br>days left</span></div>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                             <span class="sr-only">100% Complete (danger)</span>
                         </div>
                     </div>
                 </figure>
                 <!-- end single member -->
                 <!-- single challenge -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix vote">
                     <a href="idea-closed.html">
                         <div class="challenge-thumb">
                             <img src="http://www.ecitizen.gov.sg/Highlights/PublishingImages/BeTheSpark_tb_140x140px.gif" alt="" class="img-responsive">
                         </div>
                         <h4>Be The Spark!</h4></a>
-                    <p class="organiser">Organised by MOF and IDA</p>
+                    <div class="clearfix"><span class="pull-right label label-warning">Vote</span>
+                        <p class="organiser">Organised by MOF and IDA</p>
+                    </div>
                     <p class="description">We are looking for ideas to create more user-centric digital services that can allow users to easily transact with the Government anytime, anywhere. </p>
                     <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
+                        <span class="col-sm-4 no-gutter"><strong>18</strong>
+<br>votes</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"></span></div>
+                        <span class="col-sm-4 no-gutter text-right"><strong>2</strong> <br>days left</span></div>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                             <span class="sr-only">100% Complete (danger)</span>
                         </div>
                     </div>
+
                 </figure>
                 <!-- end single member -->
                 <!-- single member -->
-                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix closed">
+                <figure class="challenge-box col-md-3 col-sm-6 col-xs-12 mix vote">
                     <a href="#">
                         <div class="challenge-thumb ">
                             <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/FriendsOfUbin_logo-small.png" alt=" " class="img-responsive ">
                         </div>
                         <h4>The Ubin Project</h4></a>
-                    <p class="organiser">Organised by MND</p>
+                    <div class="clearfix"><span class="pull-right label label-warning">Vote</span>
+                        <p class="organiser">Organised by MND</p>
+                    </div>
                     <p class="description">Calling all friends and fans of Pulau Ubin to share with us your ideas and proposals to enhance the island's natural environment! </p>
                     <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
+                        <span class="col-sm-4 no-gutter"><strong>18</strong> <br>votes</span>
                         <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"></span></div>
+                        <span class="col-sm-4 no-gutter text-right"><strong>2</strong> <br>days left</span></div>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                             <span class="sr-only">100% Complete (danger)</span>
                         </div>
                     </div>
@@ -257,17 +272,14 @@
                             <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/Final-ReadFest-Logo-3.jpg" alt=" " class="img-responsive ">
                         </div>
                         <h4>NLB: Be a Poetry on Platforms Star Poet Contest</h4></a>
-                    <p class="organiser ">Organised by NLB</p>
+                    <div class="clearfix"><span class="pull-right label label-grey">Closed</span>
+                        <p class="organiser ">Organised by NLB</p>
+                    </div>
                     <p class="description ">Try your hand at poetry! Pen an original poem and submit to POP@nlb.gov.sg to receive a commemorative EZ-Link card. </p>
                     <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
-                        <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"></span></div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
+                        <p><strong>Winners will be announced soon.</strong></p>
                     </div>
+
                 </figure>
                 <!-- end single member -->
                 <!-- single member -->
@@ -277,16 +289,13 @@
                             <img src="https://ideas.ecitizen.gov.sg/community-library/accounts/91/915788/eCitizen-SURE.jpg" alt=" " class="img-responsive ">
                         </div>
                         <h4>S.U.R.E. or Not? Quiz</h4></a>
-                    <p class="organiser ">Organised by S.U.R.E Campaign</p>
+                    <div class="clearfix"><span class="pull-right label label-grey">Closed</span>
+                        <p class="organiser ">Organised by S.U.R.E Campaign</p>
+                    </div>
                     <p class="description ">With so much information out there, it’s hard to be sure of what’s true and what’s not. Simply answer 10 questions to complete the quiz. </p>
                     <div class="stats clearfix">
-                        <span class="col-sm-4 no-gutter"><strong>$1,500</strong> <br>total prize</span>
-                        <span class="col-sm-4 text-center"><strong>28</strong> <br>ideas</span>
-                        <span class="col-sm-4 no-gutter text-right"></span></div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <span class="sr-only">100% Complete (danger)</span>
-                        </div>
+
+                        <p><strong>Winners had been announced.</strong></p>
                     </div>
                 </figure>
                 <!-- end single member -->
