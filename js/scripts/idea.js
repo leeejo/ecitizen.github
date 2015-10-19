@@ -1,7 +1,7 @@
 function toggleVote(btn, text, count) {
 	var t = document.getElementById(text);
 	var c = document.getElementById(count);
-	if(t.innerText == "Voted") {
+	if (t.innerText == "Voted") {
 		//set to Vote
 		$('#' + btn).removeClass('voted');
 		t.innerText = "Vote";
@@ -18,4 +18,9 @@ function showComments(className) {
 		this.classList.remove(className);
 	});
 	$('#' + className)[0].classList.add(className);
+}
+
+function goToVoteNow() {
+	$('#btnIdea').click();
+	window.location.href="#vote";
 }

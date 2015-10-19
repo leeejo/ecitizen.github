@@ -143,7 +143,7 @@
                     <div class="tabpanel wow fadeInUp animated" data-wow-duration="500ms" role="tabpanel">
 
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#ideas" aria-controls="ideas" role="tab" data-toggle="tab"><strong>Submitted Ideas</strong> &nbsp; <span class="badge">4</span></a>
+                            <li role="presentation" class="active"><a id="btnIdea" href="#ideas" aria-controls="ideas" role="tab" data-toggle="tab"><strong>Submitted Ideas</strong> &nbsp; <span class="badge">4</span></a>
                             </li>
 
                             <li role="presentation"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a>
@@ -439,7 +439,7 @@
                     <p class="lead text-center">
                         Submission of idea had closed
                     </p>
-                    <a href="#vote" type="button" class="btn btn-orange btn-lg btn-group-justified">Vote Now</a>
+                    <a onclick="goToVoteNow()" type="button" class="btn btn-orange btn-lg btn-group-justified">Vote Now</a>
 
                     <button type="button" class="btn btn-lg btn-group-justified">
                         <i class="fa fa-plus "></i> &nbsp;Follow Challenge
