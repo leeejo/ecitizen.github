@@ -160,6 +160,11 @@ a.btn-orange,
     color: #fff;
 }
 
+a.btn-softgrey,
+.btn-softgrey {
+    background-color: #eeeeee;
+}
+
 .no-gutter {
     margin-left: 0;
     margin-right: 0;
