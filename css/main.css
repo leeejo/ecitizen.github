@@ -670,8 +670,6 @@ a.login:hover {
 .commentList {
     padding: 0;
     list-style: none;
-    max-height: 80px;
-    overflow: auto;
 }
 
 .commentList li {
@@ -707,6 +705,11 @@ a.login:hover {
 .actionBox {
     border-top: 1px solid #bbb;
     padding: 10px;
+}
+
+.hiddenComment1,
+.hiddenComment2 {
+    display: none;
 }
 
 

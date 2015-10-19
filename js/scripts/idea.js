@@ -12,3 +12,10 @@ function toggleVote(btn, text, count) {
 		c.innerText = Number(c.innerText) + 1;
 	}
 }
+
+function showComments(className) {
+	$('.' + className).each(function() {
+		this.classList.remove(className);
+	});
+	$('#' + className)[0].classList.add(className);
+}
