@@ -512,7 +512,7 @@ a.login:hover {
 .challenge-thumb {
     width: 273px;
     position: relative;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ddd;
 }
 
 .challenge-thumb img {
