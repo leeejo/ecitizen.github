@@ -4,8 +4,6 @@ $(function () {
 
 	document.getElementById('title').innerText = data["title"];
 	document.getElementById('desc').innerText = data["desc"];
-	document.getElementById('age').innerText = data["age"];
-	document.getElementById('prof').innerText = data["prof"];
 
 	var files = JSON.parse(data["uploaded"]);
 	var html = "";
