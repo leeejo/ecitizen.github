@@ -67,14 +67,10 @@ function previewfile(file) {
 function submit() {
 	var title = document.getElementById('inputTitle').value.trim();
 	var desc = document.getElementById('inputDesc').value.trim();
-	var age = document.getElementById('inputAge').value.trim();
-	var prof = document.getElementById('inputProfession').value.trim();
 
 	var data = {};
 	data["title"] = title;
 	data["desc"] = desc;
-	data["age"] = age;
-	data["prof"] = prof;
 	data["uploaded"] = JSON.stringify(files);
 
 	//proceed to summary
