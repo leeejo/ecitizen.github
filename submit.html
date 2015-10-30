@@ -23,11 +23,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic%7COpen+Sans+Condensed:700" rel="stylesheet">
     <script>
-        WebFont.load({
-            google: {
-                families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic,700italic', 'Open Sans Condensed:700']
-            }
-        });
+    WebFont.load({
+        google: {
+            families: ['Source Sans Pro:300,400,600,700,300italic,400italic,600italic,700italic', 'Open Sans Condensed:700']
+        }
+    });
     </script>
     <!-- CSS
         ================================================== -->
@@ -134,11 +134,18 @@
                             <span>Just drag and drop files here</span>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <div class="btn btn-default fileupload">
+                                <span>Upload file</span>
+                                <input type="file" class="upload" onchange="uploadFile(this.value)" />
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group" style="margin: 8px">
                         <div class="col-sm-9 col-sm-offset-3" id="holder">
                         </div>
                     </div>
-
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-10">
                             <div class="checkbox ">
@@ -239,14 +246,14 @@
     <!-- jquery easing -->
     <script src="js/wow.min.js"></script>
     <script>
-        var wow = new WOW({
-            boxClass: 'wow', // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset: 120, // distance to the element when triggering the animation (default is 0)
-            mobile: false, // trigger animations on mobile devices (default is true)
-            live: true // act on asynchronously loaded content (default is true)
-        });
-        wow.init();
+    var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 120, // distance to the element when triggering the animation (default is 0)
+        mobile: false, // trigger animations on mobile devices (default is true)
+        live: true // act on asynchronously loaded content (default is true)
+    });
+    wow.init();
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>

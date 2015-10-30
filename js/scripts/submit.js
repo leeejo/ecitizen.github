@@ -64,6 +64,12 @@ function previewfile(file) {
 	}
 }
 
+function uploadFile(filename) {
+	var parts = filename.split('\\');
+	files.push(parts[parts.length-1]);
+	reloadFileList();
+}
+
 function submit() {
 	var title = document.getElementById('inputTitle').value.trim();
 	var desc = document.getElementById('inputDesc').value.trim();
