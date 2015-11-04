@@ -48,6 +48,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     outline: 0;
+    cursor: pointer;
 }
 
 a:focus,
@@ -193,6 +194,16 @@ a.btn-softgrey,
 #navigation {
     border: 0 none;
     margin: 20px 0;
+}
+
+.wis-links li:before {
+    content: " | ";
+    padding-right: 10px;
+    color: #aaa;
+}
+
+.wis-links li:first-child:before {
+    content: none;
 }
 
 .navbar {
@@ -618,7 +629,8 @@ a.login:hover {
     margin-top: 30px;
 }
 
-.tabpanel h3 {
+.tabpanel h3,
+.tabpanel h4 {
     margin-bottom: 20px;
 }
 
@@ -630,6 +642,10 @@ a.login:hover {
     margin-top: 30px;
 }
 
+.embed-responsive {
+    margin-bottom: 20px;
+}
+
 .idea-box .panel-heading {
     padding: 0;
     background: #DDD;
@@ -639,12 +655,16 @@ a.login:hover {
     background: #F1F1F1;
 }
 
+.idea-box .media-right {
+    width: 180px !important;
+}
+
 .media h4 {
     margin: 16px 0;
 }
 
 .media-body {
-    width: 70%;
+    width: 66%;
 }
 
 .voted {
@@ -935,6 +955,7 @@ ul.footer-social,
     position: relative;
     overflow: hidden;
 }
+
 .fileupload input.upload {
     position: absolute;
     top: 0;
@@ -946,6 +967,7 @@ ul.footer-social,
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
 
 /* add on to bootstrap */
 
