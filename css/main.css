@@ -166,6 +166,22 @@ a.btn-softgrey,
     background-color: #eeeeee;
 }
 
+.btn-facebook,
+.btn-twitter {
+    color: #fff;
+    margin: 0 2px 6px 2px;
+    width: 48%;
+    display: block;
+}
+
+.btn-facebook {
+    background-color: #3B5998;
+}
+
+.btn-twitter {
+    background-color: #55acee;
+}
+
 .no-gutter {
     margin-left: 0;
     margin-right: 0;
@@ -642,6 +658,15 @@ a.login:hover {
     margin-top: 30px;
 }
 
+.tab-content ul,
+.tab-content ol {
+    margin-bottom: 20px;
+}
+
+.tab-content thead {
+    font-weight: bold;
+}
+
 .embed-responsive {
     margin-bottom: 20px;
 }
@@ -676,7 +701,8 @@ a.login:hover {
     border-bottom: 1px solid #5dabda;
     text-align: left;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
 }
 
 .vote .btn {
