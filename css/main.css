@@ -647,6 +647,7 @@ a.login:hover {
 
 .tabpanel h3,
 .tabpanel h4 {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
