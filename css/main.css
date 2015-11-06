@@ -760,7 +760,8 @@ a.login:hover {
 }
 
 .hiddenComment1,
-.hiddenComment2 {
+.hiddenComment2,
+.hiddenComment3 {
     display: none;
 }
 
